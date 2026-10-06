@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Matebruticas" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/imperial_crimson</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/imperial_crimson_container</item>
+        <item name="colorOnPrimaryContainer">@color/imperial_crimson_on_container</item>
+        <item name="colorSecondary">@color/imperial_gold</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/imperial_gold_container</item>
+        <item name="colorOnSecondaryContainer">@color/imperial_gold_on_container</item>
+    </style>
+
+    <!-- Estilo de los campos dinámicos del formulario -->
+    <style name="Widget.Matebruticas.FormInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="errorEnabled">true</item>
+        <item name="helperTextEnabled">true</item>
+    </style>
+
+    <style name="TextAppearance.Matebruticas.SectionHeader" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+</resources>
+

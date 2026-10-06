@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta "Imperium": carmesí y oro -->
+    <color name="imperial_crimson">#FF8E1B1B</color>
+    <color name="imperial_crimson_container">#FFFFDAD5</color>
+    <color name="imperial_crimson_on_container">#FF410001</color>
+    <color name="imperial_gold">#FF7A5900</color>
+    <color name="imperial_gold_container">#FFFFDF9E</color>
+    <color name="imperial_gold_on_container">#FF261A00</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="formula_canvas">#FFFFFFFF</color>
+</resources>
+

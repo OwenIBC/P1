@@ -1,3 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">P1</string>
+
+    <!-- ============================================================ -->
+    <!-- Aplicación y navegación                                      -->
+    <!-- ============================================================ -->
+    <string name="app_name">Calculadora de Matebruticas 40k</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_history">Historial</string>
+    <string name="nav_settings">Configuración</string>
+
+    <!-- ============================================================ -->
+    <!-- Pantalla de Inicio                                           -->
+    <!-- ============================================================ -->
+    <string name="home_header">¡Por el Emperador y la Física!</string>
+    <string name="home_subtitle">Elige una fórmula, introduce los datos y deja que el Adeptus Mechanicus haga el resto.</string>
+    <string name="formula_selector_hint">Fórmula</string>
+    <string name="action_calculate">Calcular</string>
+    <string name="result_title_success">Resultado</string>
+    <string name="result_title_error">¡Herejía matemática!</string>
+    <string name="result_message_error">Revisa los campos marcados en rojo y vuelve a intentarlo.</string>
+
+    <!-- Accesibilidad -->
+    <string name="cd_formula_image">Imagen de la fórmula: %1$s</string>
+    <string name="cd_meme_success">Meme de cálculo correcto</string>
+    <string name="cd_meme_error">Meme de datos inválidos</string>
+
+    <!-- Formato genérico "símbolo = valor unidad" (resultado e historial) -->
+    <string name="quantity_format">%1$s = %2$s %3$s</string>
+
+    <!-- ============================================================ -->
+    <!-- Fórmulas: nombre, expresión y símbolo del resultado          -->
+    <!-- ============================================================ -->
+    <string name="formula_magnetic_title">Fuerza magnética sobre carga móvil</string>
+    <string name="formula_magnetic_expression">F = |q| · v · B · sin(θ)</string>
+    <string name="symbol_force">F</string>
+
+    <string name="formula_heat_title">Conducción de calor (Fourier)</string>
+    <string name="formula_heat_expression">Q = k · A · (T₁ − T₂) / L</string>
+    <string name="symbol_heat_rate">Q</string>
+
+    <string name="formula_kinetic_title">Energía cinética</string>
+    <string name="formula_kinetic_expression">Ec = ½ · m · v²</string>
+    <string name="symbol_kinetic_energy">Ec</string>
+
+    <string name="formula_snell_title">Ley de Snell (ángulo de refracción)</string>
+    <string name="formula_snell_expression">θ₂ = arcsin((n₁ · sin θ₁) / n₂)</string>
+    <string name="symbol_refraction_angle">θ₂</string>
+
+    <!-- ============================================================ -->
+    <!-- Campos de entrada: etiqueta, pista y símbolo                 -->
+    <!-- ============================================================ -->
+    <string name="label_charge">Carga eléctrica (q)</string>
+    <string name="hint_charge">Puede ser negativa: se usa su valor absoluto</string>
+    <string name="symbol_charge">q</string>
+
+    <string name="label_velocity">Velocidad (v)</string>
+    <string name="hint_velocity">Mayor o igual que 0</string>
+    <string name="symbol_velocity">v</string>
+
+    <string name="label_magnetic_field">Campo magnético (B)</string>
+    <string name="hint_magnetic_field">Mayor o igual que 0</string>
+    <string name="symbol_magnetic_field">B</string>
+
+    <string name="label_theta_magnetic">Ángulo entre v y B (θ)</string>
+    <string name="hint_theta_magnetic">En grados, entre 0 y 180</string>
+    <string name="symbol_theta">θ</string>
+
+    <string name="label_conductivity">Conductividad térmica (k)</string>
+    <string name="hint_conductivity">Mayor que 0</string>
+    <string name="symbol_conductivity">k</string>
+
+    <string name="label_area">Área transversal (A)</string>
+    <string name="hint_area">Mayor que 0</string>
+    <string name="symbol_area">A</string>
+
+    <string name="label_temp_hot">Temperatura caliente (T₁)</string>
+    <string name="hint_temp_hot">Mayor que T₂ y ≥ −273.15 °C</string>
+    <string name="symbol_temp_hot">T₁</string>
+
+    <string name="label_temp_cold">Temperatura fría (T₂)</string>
+    <string name="hint_temp_cold">Menor que T₁ y ≥ −273.15 °C</string>
+    <string name="symbol_temp_cold">T₂</string>
+
+    <string name="label_thickness">Espesor (L)</string>
+    <string name="hint_thickness">Mayor que 0</string>
+    <string name="symbol_thickness">L</string>
+
+    <string name="label_mass">Masa (m)</string>
+    <string name="hint_mass">Mayor que 0</string>
+    <string name="symbol_mass">m</string>
+
+    <string name="label_n1">Índice de refracción del medio 1 (n₁)</string>
+    <string name="hint_n1">Adimensional, mayor o igual que 1</string>
+    <string name="symbol_n1">n₁</string>
+
+    <string name="label_n2">Índice de refracción del medio 2 (n₂)</string>
+    <string name="hint_n2">Adimensional, mayor o igual que 1</string>
+    <string name="symbol_n2">n₂</string>
+
+    <string name="label_theta_incidence">Ángulo de incidencia (θ₁)</string>
+    <string name="hint_theta_incidence">En grados, entre 0 y 90</string>
+    <string name="symbol_theta_incidence">θ₁</string>
+
+    <!-- ============================================================ -->
+    <!-- Unidades                                                     -->
+    <!-- ============================================================ -->
+    <string name="unit_coulomb">C</string>
+    <string name="unit_meters_per_second">m/s</string>
+    <string name="unit_tesla">T</string>
+    <string name="unit_degrees">°</string>
+    <string name="unit_conductivity">W/(m·K)</string>
+    <string name="unit_square_meters">m²</string>
+    <string name="unit_celsius">°C</string>
+    <string name="unit_meters">m</string>
+    <string name="unit_kilograms">kg</string>
+    <string name="unit_newton">N</string>
+    <string name="unit_watt">W</string>
+    <string name="unit_joule">J</string>
+
+    <!-- ============================================================ -->
+    <!-- Errores de validación                                        -->
+    <!-- ============================================================ -->
+    <string name="error_required">Campo obligatorio</string>
+    <string name="error_invalid_number">Introduce un número válido</string>
+    <string name="error_must_be_positive">Debe ser mayor que 0</string>
+    <string name="error_must_be_non_negative">Debe ser mayor o igual que 0</string>
+    <string name="error_angle_range_180">El ángulo debe estar entre 0° y 180°</string>
+    <string name="error_angle_range_90">El ángulo de incidencia debe estar entre 0° y 90°</string>
+    <string name="error_below_absolute_zero">No puede ser inferior al cero absoluto (−273.15 °C)</string>
+    <string name="error_t1_not_greater">T₁ debe ser mayor que T₂</string>
+    <string name="error_t2_not_lower">T₂ debe ser menor que T₁</string>
+    <string name="error_refractive_index">El índice de refracción debe ser mayor o igual que 1</string>
+    <string name="error_total_internal_reflection">Reflexión total interna: θ₁ supera el ángulo crítico (%1$s°)</string>
+    <string name="error_result_out_of_range">El resultado excede el rango numérico representable</string>
+
+    <!-- ============================================================ -->
+    <!-- Historial                                                    -->
+    <!-- ============================================================ -->
+    <string name="history_empty_title">Sin cálculos todavía</string>
+    <string name="history_empty_message">Los cálculos válidos de esta sesión aparecerán aquí.</string>
+    <string name="history_inputs_label">Datos ingresados</string>
+    <string name="history_result_label">Resultado</string>
+
+    <!-- ============================================================ -->
+    <!-- Configuración                                                -->
+    <!-- ============================================================ -->
+    <string name="settings_section_audio">Audio</string>
+    <string name="settings_sound_title">Efectos de sonido</string>
+    <string name="settings_sound_summary">Reproducir audios al validar o calcular</string>
+    <string name="settings_section_history">Historial de la sesión</string>
+    <string name="settings_clear_history">Borrar historial</string>
+    <string name="settings_section_about">Acerca de</string>
+    <string name="settings_about_body">Calculadora de física con cuatro fórmulas: fuerza magnética, conducción de calor, energía cinética y ley de Snell. Todos los valores se expresan en unidades del Sistema Internacional (temperaturas en °C y ángulos en grados).</string>
+    <string name="dialog_clear_history_title">¿Borrar historial?</string>
+    <string name="dialog_clear_history_message">Se eliminarán todos los cálculos de esta sesión.</string>
+    <string name="dialog_confirm_clear">Borrar</string>
+    <string name="dialog_cancel">Cancelar</string>
+
+    <plurals name="history_count">
+        <item quantity="one">%1$d cálculo registrado</item>
+        <item quantity="many">%1$d cálculos registrados</item>
+        <item quantity="other">%1$d cálculos registrados</item>
+    </plurals>
 </resources>

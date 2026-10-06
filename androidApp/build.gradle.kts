@@ -2,7 +2,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.androidApplication)
-    alias(libs.plugins.composeCompiler)
 }
 
 kotlin {
@@ -10,13 +9,27 @@ kotlin {
         jvmTarget = JvmTarget.JVM_11
     }
 }
+
 dependencies {
-    implementation(project(":shared"))
+    // Core / Kotlin-first extensions
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.fragment.ktx)
 
-    implementation(libs.androidx.activity.compose)
+    // Lifecycle (ViewModel + repeatOnLifecycle)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-    implementation(libs.compose.uiToolingPreview)
-    debugImplementation(libs.compose.uiTooling)
+    // Navigation (BottomNavigationView <-> NavController)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+
+    // UI
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.material)
+
+    testImplementation(libs.junit)
 }
 
 android {
@@ -49,6 +62,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
-        compose = true
+        viewBinding = true
     }
 }

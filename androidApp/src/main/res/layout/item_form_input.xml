@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fila reutilizable del formulario. Etiqueta (hint), pista (helperText) y unidad
+     (suffixText) se asignan en tiempo de ejecución según el InputField.
+     saveEnabled=false: el texto lo conserva HomeViewModel (evita IDs duplicados). -->
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Matebruticas.FormInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLines="1"
+        android:saveEnabled="false" />
+</com.google.android.material.textfield.TextInputLayout>
+
