@@ -11,7 +11,7 @@ import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.setupWithNavController                                                                              
 import com.example.p1.databinding.ActivityMainBinding
 
 /**
